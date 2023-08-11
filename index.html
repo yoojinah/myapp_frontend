@@ -7,7 +7,7 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Shopping Mall</title>
   </head>
   <body>
@@ -19,12 +19,12 @@
           </a>
         </div>
         <div>
-          <div><i class="xi-search"></i></div>
-          <div><i class="xi-basket"></i></div>
+          <button id="searchBtn"><i class="xi-search"></i></button>
+          <button id="cartBtn"><i class="xi-basket"></i></button>
         </div>
       </nav>
     </header>
-    <article>
+    <article class="product_list">
       <section>
         <h1>NEW ITEM</h1>
         <aside>
@@ -36,11 +36,11 @@
             </div>
             <div class="pr_info">
               <div>
-                <h4 id="productName">product name</h4>
+                <h4 id="productName"></h4>
                 <button><i class="xi-basket"></i></button>
               </div>
-              <span id="productColor">color</span>
-              <small id="productPrice">price</small>
+              <span id="productColor"></span>
+              <small id="productPrice"></small>
             </div>
           </div>
           <div class="item">
@@ -51,11 +51,11 @@
             </div>
             <div class="pr_info">
               <div>
-                <h4 id="productName">product name</h4>
+                <h4 id="productName"></h4>
                 <button><i class="xi-basket"></i></button>
               </div>
-              <span id="productColor">color</span>
-              <small id="productPrice">price</small>
+              <span id="productColor"></span>
+              <small id="productPrice"></small>
             </div>
           </div>
           <div class="item">
@@ -66,11 +66,11 @@
             </div>
             <div class="pr_info">
               <div>
-                <h4 id="productName">product name</h4>
+                <h4 id="productName"></h4>
                 <button><i class="xi-basket"></i></button>
               </div>
-              <span id="productColor">color</span>
-              <small id="productPrice">price</small>
+              <span id="productColor"></span>
+              <small id="productPrice"></small>
             </div>
           </div>
           <div class="item">
@@ -81,11 +81,11 @@
             </div>
             <div class="pr_info">
               <div>
-                <h4 id="productName">product name</h4>
+                <h4 id="productName"></h4>
                 <button><i class="xi-basket"></i></button>
               </div>
-              <span id="productColor">color</span>
-              <small id="productPrice">price</small>
+              <span id="productColor"></span>
+              <small id="productPrice"></small>
             </div>
           </div>
         </aside>
@@ -94,10 +94,12 @@
     <article>
       <form action="">
         <label for="">All Select &nbsp;<input type="checkbox" /></label>
+      </form>
+    </article>
 
+    <!-- <article>
+      <form action="">
         <div>
-          <input type="checkbox" name="" id="" />
-
           <div>
             <img src="" alt="" />
           </div>
@@ -105,14 +107,13 @@
             <h4>product name</h4>
             <span>color</span>
           </div>
-          <p>quentity</p>
           <small>19.00</small>
           <div>
-            <button>Delete</button>
+            <button id="addBtn">Add to Cart +</button>
           </div>
         </div>
       </form>
-    </article>
+    </article> -->
     <script src="./js/script.js"></script>
   </body>
 </html>

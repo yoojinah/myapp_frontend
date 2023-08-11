@@ -7,9 +7,18 @@
   font-style: normal;
 }
 
-*{margin: 0; padding: 0;box-sizing: border-box;font-family: 'GmarketSansMedium';}
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: 'GmarketSansMedium';
+}
 a{text-decoration: none;}
-
+button{
+  outline: 0;
+  border: 0;
+  background: 0;
+  cursor: pointer;
+}
 header{
   width: 100%;
   height: 70px;
@@ -33,6 +42,14 @@ header nav div:nth-of-type(2){
 }
 header nav div:nth-of-type(2) i{
   font-size: 2rem;
+}
+header nav div:nth-of-type(2) #searchBtn:hover i{
+  transition: all .3s;
+  transform: scale(1.1);
+}
+header nav div:nth-of-type(2) #cartBtn i{
+  color: #666;
+  font-size: 2.2rem;
 }
 article{
   max-width: 1400px;
@@ -87,13 +104,9 @@ aside .item{
   align-items: center;
 }
 .item .pr_info button{
-  border: 0;
-  outline: none;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: 0;
 }
  .item .pr_info i{
   font-size: 1.5rem;
@@ -112,26 +125,21 @@ aside .item{
   padding-top: .7rem;
   font-weight: bold;
  }
-
-form:nth-of-type(1) label{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+ form:nth-of-type(1) label{
   font-weight: bold;
-}
-form div{
+ }
+ article form:nth-of-type(1) .cart_item div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid;
 }
-form div div:nth-of-type(1){
-  border: 1px solid;
+form:nth-of-type(1) .cart_item div div:nth-of-type(1){
   max-width: 100px;
   width: 100%;
   height: 100px;
 }
-form div div:nth-of-type(2){
+form:nth-of-type(1) .cart_item div div:nth-of-type(2){
   flex-direction: column;
   align-items: flex-start;
 }
