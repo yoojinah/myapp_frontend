@@ -187,7 +187,6 @@ aside .item{
 
 @media screen and (max-width:768px) {
   aside .item{width: 48.5%;margin-bottom: 2rem;}
-  aside .item:nth-last-of-type(-n + 2){margin-bottom: 0;}
 }
 @media screen and (max-width:500px) {
   header nav {padding: 0 1rem;}
