@@ -1,9 +1,16 @@
 // main화면 NEW ITEM 레이아웃 상품(item) 리스트 보여주기
 (() => {
-  // 1. db에 데이터를 다 넣기 (이미지 변환까지 해서) -> ok
-  // 2. 코드 주석처리하고, 먼저 data가 제대로 배열로 넘어오는지 console.log 확인 -> ok
+  function loadHeader() {
+    const headerContainer = document.querySelector("header");
+    console.log(headerContainer);
+    fetch("/header.html") // header.html 파일의 경로를 올바르게 지정
+      .then((response) => response.text())
+      .then((data) => {
+        headerContainer.innerHTML = data;
+      });
+  }
+  loadHeader();
 
-  // 3. foreach, for문을 써서 전체적으로 반복해서 보여주기 데이터 -> ok
   fetch("http://localhost:8080/main", {
     method: "GET",
     headers: {
